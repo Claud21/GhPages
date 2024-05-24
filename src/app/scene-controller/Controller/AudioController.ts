@@ -61,14 +61,8 @@ export class AudioController {
   public playAudioByKey(scene: Phaser.Scene, key: string): void {
     let audio = this.audioFiles[key];
     if (!audio) {
-      // Versuche, das Audio-Objekt zu laden
       audio = scene.sound.add(key);
-      if (audio) {
-        this.audioFiles[key] = audio;
-      } else {
-        console.error(`Fehler: Audio-Objekt konnte für den Schlüssel '${key}' nicht geladen werden.`);
-        return;
-      }
+      this.audioFiles[key] = audio;
     }
     audio.play();
   }
@@ -88,5 +82,4 @@ export class AudioController {
       delete this.audioFiles[key];
     }
   }
-
 }

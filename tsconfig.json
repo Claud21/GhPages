@@ -21,7 +21,7 @@
     "useDefineForClassFields": false,
     "allowSyntheticDefaultImports": true,
     "lib": [
-      "es2018",
+      "ES2022",
       "dom",
       "scripthost"
     ]

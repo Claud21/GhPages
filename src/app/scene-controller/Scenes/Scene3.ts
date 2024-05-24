@@ -130,7 +130,8 @@ export default class Scene3 extends Phaser.Scene {
   navigateToSceneComponent(){
 
     console.log('SingletonService:', this.singletonService);
-
+    AudioController.getInstance().destroyAllAudio();
+    AudioController.getInstance().stopAllAudio();
     if (this.singletonService) {
       this.singletonService.navigateToSceneSelector();
     } else {

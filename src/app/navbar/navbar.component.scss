@@ -1,5 +1,3 @@
-
-
 .navbar a:hover {
   color: black; /* Textfarbe ändern */
   background-color: yellow; /* Hintergrundfarbe ändern */
@@ -31,7 +29,7 @@
   display: flex;
   justify-content: space-between; /* Elemente links und rechts ausrichten */
   align-items: center; /* Vertikal zentrieren */
-
+  //background-color: green;
   height: 50px;
 
 }
@@ -43,7 +41,7 @@
 
 .navbar .btn {
   border: 2px solid black; /* Umrandung hinzufügen */
-
+  //padding: 12px 24px; /* Größere Padding-Werte für den Button */
   width: 150px; /* Feste Breite für den Button */
   height:50px; /* Feste Höhe für den Button */
 }

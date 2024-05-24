@@ -1,6 +1,3 @@
-
-
-
 .full-page-background {
   min-height: 100vh;
   background-image: url("/assets/hintergrund/scene_selector_zahlen.jpg");
@@ -20,7 +17,7 @@
 .card-img-top {
   width: 50%; /* Reduziert die Breite der Bilder auf 50% */
   height: 50%; /* Lässt die Höhe dynamisch an die Breite angepasst werden */
-
+  //object-fit: cover;
   justify-items: center;
   margin: 0 auto;
 }
